@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Портфоліо Анни Шенішевської</title>
-<meta name="description" content="Анна Шенішевська — Instructional Designer та E-learning Specialist. Кейси з онбордингу та навчального контенту, інтерактивна симуляція діалогу й пояснення того, як її спроєктовано.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Анна Шенішевська — Instructional Designer та E-learning Specialist. Онбординг, сценарне навчання, інтерактивні HTML5-курси та AI-фідбек для команд, що спілкуються з клієнтами.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://anna-shenishevska.github.io/portfolio/">
 <meta property="og:url" content="https://anna-shenishevska.github.io/portfolio/">
@@ -135,7 +136,6 @@ main{position:relative;z-index:1}
 .sticky:hover{transform:rotate(0deg) scale(1.02)}
 .sticky::before{content:"";position:absolute;top:-10px;left:50%;width:74px;height:22px;transform:translateX(-50%) rotate(-3deg);background:var(--tape);border-left:2px dotted color-mix(in srgb,var(--paper) 60%,transparent);border-right:2px dotted color-mix(in srgb,var(--paper) 60%,transparent)}
 .sticky b{font-family:var(--f-display);font-weight:650;font-size:clamp(34px,3.6vw,46px);line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
-.sticky b span{font-size:clamp(21px,3vw,36px);font-weight:inherit;line-height:1.08}
 .sticky b small{font-size:.5em;font-weight:500;letter-spacing:0}
 .sticky span{font-size:14.5px;line-height:1.38;font-weight:500}
 .s-yellow{background:var(--st-yellow)}.s-pink{background:var(--st-pink)}.s-sage{background:var(--st-sage)}.s-blue{background:var(--st-blue)}
@@ -172,7 +172,7 @@ section{padding-block:64px 8px}
 
 /* cases */
 .cases{display:grid;gap:34px}
-.case{display:grid;grid-template-columns:minmax(0,1fr);gap:0;transform:rotate(var(--r,0deg))}
+.case{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:0;transform:rotate(var(--r,0deg))}
 .case .sheet{padding:30px 32px 28px;display:grid;gap:18px;min-width:0}
 .case-top{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px}
 .case-no{font-family:var(--f-hand);font-size:30px;font-weight:700;color:var(--wine);line-height:1}
@@ -358,26 +358,192 @@ footer{padding-block:6px 36px;color:var(--pencil);font-size:13px;display:flex;fl
       <h1 lang="en"><span class="ln">Anna</span><span class="ln">Shenishevska</span></h1>
       <svg class="scribble" aria-hidden="true" viewBox="0 0 420 18" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M3 11C70 3 140 15 210 8s150-4 205 3"/><path d="M40 15c60-5 140-4 220-6" stroke-width="2" opacity=".55"/></svg>
       <div class="role">Instructional Designer · E-learning Specialist</div>
-      <p class="lead" lang="uk">Проєктую онбординг, інтерактивні курси й симуляції для продуктових команд. Перш ніж відкривати редактор курсу, з’ясовую, <span class="hl">що людині треба вміти на першій зміні</span>.</p>
-      <p class="lead" lang="en">I design onboarding, interactive courses and simulations for product teams. Before opening the course editor, I ask <span class="hl">what someone needs to be able to do on their first shift</span>.</p>
-      <div class="status"><span lang="uk">Відкрита до нової ролі · віддалено</span><span lang="en">Open to new roles · remote</span></div>
+      <p class="lead" lang="uk">Створюю навчання для команд, які щодня говорять із клієнтами: онбординг, сценарні симуляції, інтерактивні HTML5-курси та <span class="hl">AI-фідбек, що пояснює, що робити далі</span>.</p>
+      <p class="lead" lang="en">I design learning for teams who talk to customers every day: onboarding, scenario-based simulations, interactive HTML5 courses and <span class="hl">AI feedback that explains what to do next</span>.</p>
+      <div class="status"><span lang="uk">Відкрита до нових проєктів · віддалено</span><span lang="en">Open to new roles · remote</span></div>
       <div class="btns">
-        <a class="btn primary" href="#demo"><span lang="uk">Спробувати симуляцію</span><span lang="en">Try the simulation</span></a>
-        <a class="btn" href="#cases"><span lang="uk">Подивитися кейси</span><span lang="en">See case studies</span></a>
+        <a class="btn primary" href="#cases"><span lang="uk">Подивитися кейси ↓</span><span lang="en">See case studies ↓</span></a>
+        <a class="btn" href="#demo"><span lang="uk">Пройти демо-симуляцію</span><span lang="en">Try the demo</span></a>
+        <a class="btn" lang="uk" href="Anna_Shenishevska_CV_UA.pdf">Відкрити CV</a>
+        <a class="btn" lang="en" href="Anna_Shenishevska_CV_EN.pdf">View CV</a>
       </div>
     </div>
 
-    <div class="board">
-      <div class="sticky s-yellow" style="--r:-3deg"><b><span lang="uk">Онбординг</span><span lang="en">Onboarding</span></b><span lang="uk">Від робочих задач до практики</span><span lang="en">From job tasks to practice</span></div>
-      <div class="sticky s-pink" style="--r:2.5deg"><b><span lang="uk">Контент</span><span lang="en">Content</span></b><span lang="uk">Двомовні курси, гайди та вправи</span><span lang="en">Bilingual courses, guides and exercises</span></div>
-      <div class="sticky s-sage" style="--r:1.5deg"><b><span lang="uk">HTML5</span><span lang="en">HTML5</span></b><span lang="uk">Інтерактивні курси для команд</span><span lang="en">Interactive courses for teams</span></div>
+    <div class="board" aria-label="Key numbers">
+      <div class="sticky s-yellow" style="--r:-3deg"><b>100+</b><span lang="uk">новачків, яких я супроводжувала на онбордингу</span><span lang="en">new hires I supported through onboarding</span></div>
+      <div class="sticky s-pink" style="--r:2.5deg"><b>15–45<small> <span lang="uk">год</span><span lang="en">h</span></small></b><span lang="uk">на місяць економить команді AI-фідбек у симуляціях</span><span lang="en">of review time saved monthly by AI feedback in simulations</span></div>
+      <div class="sticky s-sage" style="--r:1.5deg"><b>4.6–4.8</b><span lang="uk">з 5 — так слухачі оцінюють мої курси</span><span lang="en">out of 5: how learners rate my courses</span></div>
       <div class="sticky s-blue" style="--r:-2deg"><b>9 <small><span lang="uk">років</span><span lang="en">years</span></small></b><span lang="uk">на передовій клієнтського сервісу до переходу в L&amp;D</span><span lang="en">in frontline customer service before moving into L&amp;D</span></div>
       <div class="hand note" aria-hidden="true">
         <svg width="34" height="26" viewBox="0 0 34 26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M31 22C22 22 10 16 5 5"/><path d="M3 13l2-8 8 3"/></svg>
-        <span lang="uk">що я проєктую</span><span lang="en">what I design</span>
+        <span lang="uk">цифри з реальної роботи</span><span lang="en">real numbers, real work</span>
       </div>
     </div>
   </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="hand kicker"><span lang="uk">трохи про мене</span><span lang="en">a little about me</span></span>
+        <h2><span lang="uk">Про мене</span><span lang="en">About</span></h2></div>
+      </div>
+      <div class="about">
+        <div class="card taped about-text">
+          <p lang="uk">Дев’ять років я сама відповідала клієнтам: у контакт-центрах, а потім у live-чаті цифрового продукту. Я знаю, як звучить складна розмова з того боку екрана.</p>
+          <p lang="en">For nine years I was the one answering customers: first in contact centres, then in the live chat of a digital product. I know how a difficult conversation sounds from the other side of the screen.</p>
+          <p lang="uk">У 2025 році я перейшла в команду Education в Obrio. Там проєктувала онбординг для нових спеціалістів, писала сценарії складних діалогів, впровадила AI-фідбек у чат-симуляції та запропонувала формат інтерактивних HTML5-курсів, який став стандартом команди.</p>
+          <p lang="en">In 2025 I moved into the Education team at Obrio. There I designed onboarding for new specialists, wrote scenarios for difficult conversations, introduced AI feedback in chat simulations and proposed an interactive HTML5 course format that became the team standard.</p>
+          <p lang="uk">Мені важливо, щоб після курсу людина впевненіше діяла на роботі. Тому я починаю з реальних ситуацій, даю безпечно помилитися на практиці й будую фідбек, з яким зрозуміло, що робити наступного разу.</p>
+          <p lang="en">What matters to me is that people act with more confidence at work after a course. So I start from real situations, give a safe space to make mistakes in practice, and build feedback that makes the next attempt clear.</p>
+        </div>
+        <div class="card approach">
+          <h3><span lang="uk">Спочатку задача. Потім курс.</span><span lang="en">Start with the task. Then design learning.</span></h3>
+          <p class="sub"><span lang="uk">Чотири питання, з яких починається кожен мій проєкт.</span><span lang="en">Four questions every project of mine starts with.</span></p>
+          <ol class="steps">
+            <li><span class="n">1</span><div><strong><span lang="uk">Потреба</span><span lang="en">Need</span></strong><p lang="uk">Яку робочу задачу людина має вміти виконати?</p><p lang="en">What should people be able to do at work?</p></div></li>
+            <li><span class="n">2</span><div><strong><span lang="uk">Практика</span><span lang="en">Practice</span></strong><p lang="uk">Які реальні рішення й типові помилки варто змоделювати?</p><p lang="en">Which real decisions and common mistakes should we simulate?</p></div></li>
+            <li><span class="n">3</span><div><strong><span lang="uk">Фідбек</span><span lang="en">Feedback</span></strong><p lang="uk">Яка конкретна підказка допоможе зробити наступну спробу краще?</p><p lang="en">What specific guidance helps the next attempt?</p></div></li>
+            <li><span class="n">4</span><div><strong><span lang="uk">Перевірка</span><span lang="en">Evaluation</span></strong><p lang="uk">Що можна виміряти чи побачити після навчання?</p><p lang="en">What can we measure or observe after training?</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section id="cases">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="hand kicker"><span lang="uk">обрані роботи</span><span lang="en">selected work</span></span>
+        <h2><span lang="uk">Кейси</span><span lang="en">Case studies</span></h2></div>
+        <p class="side" lang="uk">П’ять проєктів 2025–2026 років. Описи узагальнені: без внутрішніх матеріалів, скриншотів і даних клієнтів.</p>
+        <p class="side" lang="en">Five projects from 2025–2026. Descriptions are generalised: no internal materials, screenshots or customer data.</p>
+      </div>
+
+      <div class="cases">
+        <!-- 01 -->
+        <article class="case" style="--r:-.3deg">
+          <div class="card taped sheet">
+            <div class="case-top"><span class="case-no">01</span><span class="case-area"><span lang="uk">Оцінювання · AI у навчанні</span><span lang="en">Assessment · AI in L&amp;D</span></span></div>
+            <h3><span lang="uk">AI-фідбек для навчальних чат-симуляцій</span><span lang="en">AI feedback for training chat simulations</span></h3>
+            <div class="cols">
+              <div class="col"><h4><span lang="uk">Задача</span><span lang="en">Challenge</span></h4>
+                <p lang="uk">Тестові діалоги новачків перевіряли вручну. Це забирало години команди, а глибина фідбеку залежала від того, хто і коли перевіряв.</p>
+                <p lang="en">New hires’ practice conversations were reviewed by hand. It took hours of team time, and the depth of feedback depended on who reviewed and when.</p></div>
+              <div class="col"><h4><span lang="uk">Що я зробила</span><span lang="en">What I did</span></h4>
+                <ul lang="uk"><li>Розробила зважені критерії оцінювання</li><li>Впровадила AI-фідбек наприкінці чат-симуляцій</li><li>Створила робочий прототип двомовного симулятора розмов: п’ять персон клієнтів і кілька рівнів складності</li></ul>
+                <ul lang="en"><li>Developed weighted assessment criteria</li><li>Introduced AI feedback at the end of chat simulations</li><li>Built a working prototype of a bilingual conversation simulator with five customer personas and several difficulty levels</li></ul></div>
+              <div class="col res"><h4><span lang="uk">Результат</span><span lang="en">Outcome</span></h4>
+                <p lang="uk">Автоматичний фідбек замінив ручну перевірку тестових розмов і економить команді орієнтовно 15–45 годин на місяць. Кожен новачок отримує однаково детальний розбір.</p>
+                <p lang="en">Automated feedback replaced manual review of practice conversations, saving the team an estimated 15–45 hours a month. Every new hire gets an equally detailed review.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Assessment design</span><span class="tag">Prompt engineering</span><span class="tag">Claude</span><span class="tag">Chat simulations</span></div>
+          </div>
+          <div class="margin-note" aria-hidden="true">
+            <span class="big">15–45<svg viewBox="0 0 100 60" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2"><path d="M52 4C20 2 3 16 4 31s22 26 50 25 44-12 42-27S75 3 40 6"/></svg></span>
+            <span class="small"><span lang="uk">годин на місяць</span><span lang="en">hours a month</span></span>
+          </div>
+        </article>
+
+        <!-- 02 -->
+        <article class="case" style="--r:.25deg">
+          <div class="card taped r sheet">
+            <div class="case-top"><span class="case-no">02</span><span class="case-area"><span lang="uk">Онбординг</span><span lang="en">Onboarding</span></span></div>
+            <h3><span lang="uk">Онбординг, побудований навколо реальної роботи</span><span lang="en">Onboarding built around the real job</span></h3>
+            <div class="cols">
+              <div class="col"><h4><span lang="uk">Задача</span><span lang="en">Challenge</span></h4>
+                <p lang="uk">Нові спеціалісти мали за короткий час засвоїти складні правила й навички спілкування, а потім одразу застосувати їх у живих розмовах.</p>
+                <p lang="en">New specialists had to learn complex rules and communication skills in a short time, then apply them straight away in live conversations.</p></div>
+              <div class="col"><h4><span lang="uk">Що я зробила</span><span lang="en">What I did</span></h4>
+                <ul lang="uk"><li>Створила навчальні матеріали для двох програм: тритижневої та шестиденної</li><li>Будувала логіку модулів, практичні вправи, сценарії та перевірки розуміння</li><li>Спиралася на власний досвід у тій самій ролі</li></ul>
+                <ul lang="en"><li>Created learning materials for two programmes: a three-week and a six-day one</li><li>Built module logic, practice exercises, scenarios and knowledge checks</li><li>Drew on my own experience in the same role</li></ul></div>
+              <div class="col res"><h4><span lang="uk">Результат</span><span lang="en">Outcome</span></h4>
+                <p lang="uk">Програми проходять усі нові спеціалісти з вересня 2025 року. Я напряму супроводжувала понад 100 новачків.</p>
+                <p lang="en">Every new specialist has completed these programmes since September 2025. I directly supported more than 100 new hires.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Training Needs Analysis</span><span class="tag">Learning journeys</span><span class="tag">LearnUpon</span><span class="tag">Knowledge checks</span></div>
+          </div>
+          <div class="margin-note" aria-hidden="true">
+            <span class="big">100+<svg viewBox="0 0 100 60" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 5C18 3 2 18 4 32s24 24 52 23 42-14 40-28S72 2 36 7"/></svg></span>
+            <span class="small"><span lang="uk">новачків</span><span lang="en">new hires</span></span>
+          </div>
+        </article>
+
+        <!-- 03 -->
+        <article class="case" style="--r:-.2deg">
+          <div class="card taped sheet">
+            <div class="case-top"><span class="case-no">03</span><span class="case-area">E-learning · HTML5</span></div>
+            <h3><span lang="uk">Інтерактивні HTML5-курси, що стали стандартом команди</span><span lang="en">Interactive HTML5 courses that became the team standard</span></h3>
+            <div class="cols">
+              <div class="col"><h4><span lang="uk">Задача</span><span lang="en">Challenge</span></h4>
+                <p lang="uk">Статичні матеріали погано підходили для практичних прикладів і взаємодій, а оновлювати їх було довго.</p>
+                <p lang="en">Static materials didn’t suit practical examples and interactions, and they were slow to update.</p></div>
+              <div class="col"><h4><span lang="uk">Що я зробила</span><span lang="en">What I did</span></h4>
+                <ul lang="uk"><li>Запропонувала формат інтерактивних HTML5-курсів, які створюються з допомогою AI</li><li>Навчила колег робити курси в цьому форматі</li><li>Створила курси й гайди про безпеку, етику, продуктивність та операційні метрики</li></ul>
+                <ul lang="en"><li>Proposed an interactive HTML5 course format built with AI assistance</li><li>Trained colleagues to create courses in this format</li><li>Created courses and guides on safety, ethics, performance and operational metrics</li></ul></div>
+              <div class="col res"><h4><span lang="uk">Результат</span><span lang="en">Outcome</span></h4>
+                <p lang="uk">Формат став стандартом команди. Слухачі оцінили мої курси на 4.6–4.8 з 5.</p>
+                <p lang="en">The format became the team standard. Learners rated my courses 4.6–4.8 out of 5.</p></div>
+            </div>
+            <div class="tags"><span class="tag">AI-assisted HTML5</span><span class="tag">HTML/CSS</span><span class="tag">Descript</span><span class="tag">ElevenLabs</span></div>
+          </div>
+          <div class="margin-note" aria-hidden="true">
+            <span class="big">4.8★<svg viewBox="0 0 100 60" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2"><path d="M54 4C22 1 3 15 4 30s20 26 48 26 46-11 44-26S78 4 42 5"/></svg></span>
+            <span class="small"><span lang="uk">найвища оцінка курсу</span><span lang="en">top course rating</span></span>
+          </div>
+        </article>
+
+        <!-- 04 -->
+        <article class="case" style="--r:.3deg">
+          <div class="card taped r sheet">
+            <div class="case-top"><span class="case-no">04</span><span class="case-area"><span lang="uk">Сценарне навчання · Trust &amp; Safety</span><span lang="en">Scenario-based learning · Trust &amp; Safety</span></span></div>
+            <h3><span lang="uk">Складні розмови: сценарії та обов’язкове навчання</span><span lang="en">Difficult conversations: scenarios and mandatory training</span></h3>
+            <div class="cols">
+              <div class="col"><h4><span lang="uk">Задача</span><span lang="en">Challenge</span></h4>
+                <p lang="uk">Чутливі теми в розмовах із клієнтами потребують точних формулювань і практики без ризику для реальних людей.</p>
+                <p lang="en">Sensitive topics in customer conversations need precise wording and practice without risk to real people.</p></div>
+              <div class="col"><h4><span lang="uk">Що я зробила</span><span lang="en">What I did</span></h4>
+                <ul lang="uk"><li>Спроєктувала сценарне навчання для 20+ чутливих тем, зокрема інтерактивні чат-симуляції</li><li>Разом із командою Trust &amp; Safety запустила обов’язкове навчання для двох груп</li><li>Написала сценарій подкасту, підготувала комунікації двома мовами й відстежувала проходження</li></ul>
+                <ul lang="en"><li>Designed scenario-based training for 20+ sensitive topics, including interactive chat simulations</li><li>Launched mandatory training for two learner groups together with Trust &amp; Safety</li><li>Wrote a podcast script, prepared bilingual communications and tracked completion</li></ul></div>
+              <div class="col res"><h4><span lang="uk">Результат</span><span lang="en">Outcome</span></h4>
+                <p lang="uk">Спеціалісти відпрацьовують складні відповіді в безпечному середовищі, перш ніж зустрінуть такі ситуації в роботі.</p>
+                <p lang="en">Specialists practise difficult responses in a safe environment before they meet these situations at work.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Scenario-based learning</span><span class="tag">Compliance training</span><span class="tag">SME collaboration</span><span class="tag">Podcast</span></div>
+          </div>
+          <div class="margin-note" aria-hidden="true">
+            <span class="big">20+<svg viewBox="0 0 100 60" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2"><path d="M48 5C18 4 3 18 4 32s24 23 50 23 44-13 42-28S70 3 38 7"/></svg></span>
+            <span class="small"><span lang="uk">чутливих тем</span><span lang="en">sensitive topics</span></span>
+          </div>
+        </article>
+
+        <!-- 05 -->
+        <article class="case" style="--r:-.25deg">
+          <div class="card taped sheet">
+            <div class="case-top"><span class="case-no">05</span><span class="case-area"><span lang="uk">Якість контенту</span><span lang="en">Content quality</span></span></div>
+            <h3><span lang="uk">Аудит навчального контенту</span><span lang="en">Learning content audit</span></h3>
+            <div class="cols">
+              <div class="col"><h4><span lang="uk">Задача</span><span lang="en">Challenge</span></h4>
+                <p lang="uk">У великому каталозі курсів з часом з’являються розбіжності: одна й та сама ситуація може мати різні поради в різних модулях.</p>
+                <p lang="en">A large course catalogue drifts over time: the same situation can get different guidance in different modules.</p></div>
+              <div class="col"><h4><span lang="uk">Що я зробила</span><span lang="en">What I did</span></h4>
+                <ul lang="uk"><li>Перевірила понад 100 фрагментів контенту приблизно у 20 курсах</li><li>Позначила суперечливі інструкції</li><li>Ініціювала дослідження реальних розмов із клієнтами, щоб уточнити правила</li></ul>
+                <ul lang="en"><li>Audited 100+ content passages across about 20 courses</li><li>Flagged inconsistent guidance</li><li>Initiated research into real customer conversations to clarify the rules</li></ul></div>
+              <div class="col res"><h4><span lang="uk">Результат</span><span lang="en">Outcome</span></h4>
+                <p lang="uk">Знайдені суперечності стали основою для уточнення правил, а курси почали звіряти з тим, що реально відбувається в розмовах.</p>
+                <p lang="en">The inconsistencies found became the basis for clarifying the rules, and courses started being checked against what really happens in conversations.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Content audit</span><span class="tag">Learning analytics</span><span class="tag">Notion</span><span class="tag">Google Workspace</span></div>
+          </div>
+          <div class="margin-note" aria-hidden="true">
+            <span class="big">100+<svg viewBox="0 0 100 60" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2"><path d="M52 4C20 3 3 17 4 31s22 25 50 24 44-12 42-27S74 2 40 6"/></svg></span>
+            <span class="small"><span lang="uk">фрагментів у ~20 курсах</span><span lang="en">passages in ~20 courses</span></span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <!-- DEMO -->
   <section id="demo">
@@ -420,7 +586,7 @@ footer{padding-block:6px 36px;color:var(--pencil);font-size:13px;display:flex;fl
         </div>
         <aside class="card taped r lab-notes">
           <span class="hand"><span lang="uk">чому саме так?</span><span lang="en">why assess it this way?</span></span>
-          <h3><span lang="uk">Фідбек має пояснювати, що робити далі.</span><span lang="en">Good feedback points to the next step.</span></h3>
+          <h3><span lang="uk">Фідбек має пояснювати наступний крок, а не просто ставити бал.</span><span lang="en">Good feedback shows the next step, not just a number.</span></h3>
           <p lang="uk">Кожну відповідь оцінюю за чотирма видимими критеріями. Наприкінці ти бачиш результат і конкретний напрям для покращення.</p>
           <p lang="en">Every reply is scored against four visible criteria. At the end you see both the result and a specific direction to improve.</p>
           <div class="rubric" id="rubric"></div>
@@ -543,7 +709,7 @@ footer{padding-block:6px 36px;color:var(--pencil);font-size:13px;display:flex;fl
 
       <div class="limit">
         <span class="hand"><span lang="uk">обмеження методу</span><span lang="en">a limit worth naming</span></span>
-        <h3><span lang="uk">Що показує результат симуляції</span><span lang="en">What the simulation score can show</span></h3>
+        <h3><span lang="uk">Що цей результат доводить, а що ні</span><span lang="en">What this score shows and what it doesn’t</span></h3>
         <p lang="uk">Демо показує, які рішення людина ухвалює у змодельованих ситуаціях. Воно саме по собі не доводить, що навичка перенесеться в реальну роботу. Щоб оцінити таке перенесення, потрібні інші методи: спостереження за поведінкою, аналіз реальних робочих прикладів, оцінка якості виконання завдань.</p>
         <p lang="en">The demo shows which decisions a person makes in simulated situations. On its own it doesn’t prove the skill transfers to real work. Measuring that transfer takes other methods: observing behaviour, reviewing real work samples, assessing the quality of task performance.</p>
         <p class="fine" lang="uk">Сценарії, критерії, ваги й логіка фідбеку створені лише для цього публічного демо й не відтворюють матеріалів чи методик роботодавця.</p>
@@ -552,150 +718,7 @@ footer{padding-block:6px 36px;color:var(--pencil);font-size:13px;display:flex;fl
     </div>
   </section>
 
-
-  <section id="about">
-    <div class="wrap">
-      <div class="sec-head">
-        <div><span class="hand kicker"><span lang="uk">трохи про мене</span><span lang="en">a little about me</span></span>
-        <h2><span lang="uk">Про мене</span><span lang="en">About</span></h2></div>
-      </div>
-      <div class="about">
-        <div class="card taped about-text">
-          <p lang="uk">Дев’ять років я сама відповідала клієнтам: у контакт-центрах, а потім у live-чаті цифрового продукту. Я знаю, як звучить складна розмова з того боку екрана.</p>
-          <p lang="en">For nine years I was the one answering customers: first in contact centres, then in the live chat of a digital product. I know how a difficult conversation sounds from the other side of the screen.</p>
-          <p lang="uk">У 2025 році я перейшла в команду Education в Obrio. Там проєктувала онбординг для нових спеціалістів, писала сценарії складних діалогів, впровадила AI-фідбек у чат-симуляції та запропонувала формат інтерактивних HTML5-курсів, який став стандартом команди.</p>
-          <p lang="en">In 2025 I moved into the Education team at Obrio. There I designed onboarding for new specialists, wrote scenarios for difficult conversations, introduced AI feedback in chat simulations and proposed an interactive HTML5 course format that became the team standard.</p>
-          <p lang="uk">Мені важливо, щоб після курсу людина впевненіше діяла на роботі. Тому я починаю з реальних ситуацій, даю безпечно помилитися на практиці й будую фідбек, з яким зрозуміло, що робити наступного разу.</p>
-          <p lang="en">What matters to me is that people act with more confidence at work after a course. So I start from real situations, give a safe space to make mistakes in practice, and build feedback that makes the next attempt clear.</p>
-        </div>
-        <div class="card approach">
-          <h3><span lang="uk">Спочатку задача. Потім курс.</span><span lang="en">Start with the task. Then design learning.</span></h3>
-          <p class="sub"><span lang="uk">Чотири питання, з яких починається кожен мій проєкт.</span><span lang="en">Four questions every project of mine starts with.</span></p>
-          <ol class="steps">
-            <li><span class="n">1</span><div><strong><span lang="uk">Потреба</span><span lang="en">Need</span></strong><p lang="uk">Яку робочу задачу людина має вміти виконати?</p><p lang="en">What should people be able to do at work?</p></div></li>
-            <li><span class="n">2</span><div><strong><span lang="uk">Практика</span><span lang="en">Practice</span></strong><p lang="uk">Які реальні рішення й типові помилки варто змоделювати?</p><p lang="en">Which real decisions and common mistakes should we simulate?</p></div></li>
-            <li><span class="n">3</span><div><strong><span lang="uk">Фідбек</span><span lang="en">Feedback</span></strong><p lang="uk">Яка конкретна підказка допоможе зробити наступну спробу краще?</p><p lang="en">What specific guidance helps the next attempt?</p></div></li>
-            <li><span class="n">4</span><div><strong><span lang="uk">Перевірка</span><span lang="en">Evaluation</span></strong><p lang="uk">Що можна виміряти чи побачити після навчання?</p><p lang="en">What can we measure or observe after training?</p></div></li>
-          </ol>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CASES -->
-  <section id="cases">
-    <div class="wrap">
-      <div class="sec-head">
-        <div><span class="hand kicker"><span lang="uk">обрані роботи</span><span lang="en">selected work</span></span>
-        <h2><span lang="uk">Кейси</span><span lang="en">Case studies</span></h2></div>
-        <p class="side" lang="uk">П’ять робочих кейсів про навчальний дизайн, виробництво контенту та покращення процесів. Описи узагальнені.</p>
-        <p class="side" lang="en">Five projects in learning design, content production and process improvement. Project descriptions are generalised.</p>
-      </div>
-
-      <div class="cases">
-        <!-- 01 -->
-        <article class="case" style="--r:-.3deg">
-          <div class="card taped sheet">
-            <div class="case-top"><span class="case-no">01</span><span class="case-area"><span lang="uk">Оцінювання · AI у навчанні</span><span lang="en">Assessment · AI in L&amp;D</span></span></div>
-            <h3><span lang="uk">AI-фідбек для навчальних чат-симуляцій</span><span lang="en">AI feedback for training chat simulations</span></h3>
-            <div class="cols">
-              <div class="col"><h4><span lang="uk">Задача</span><span lang="en">Challenge</span></h4>
-                <p lang="uk">Тестові діалоги новачків перевіряли вручну. Ступінь деталізації фідбеку залежав від того, хто перевіряв.</p>
-                <p lang="en">New hires’ practice conversations were reviewed by hand. The depth of feedback varied by reviewer.</p></div>
-              <div class="col"><h4><span lang="uk">Що я зробила</span><span lang="en">What I did</span></h4>
-                <ul lang="uk"><li>Розробила зважені критерії оцінювання</li><li>Впровадила AI-фідбек наприкінці чат-симуляцій</li><li>Створила робочий прототип двомовної симуляції з різними ролями й рівнями складності</li></ul>
-                <ul lang="en"><li>Developed weighted assessment criteria</li><li>Introduced AI feedback at the end of chat simulations</li><li>Built a working bilingual simulation prototype with varying roles and difficulty levels</li></ul></div>
-              <div class="col res"><h4><span lang="uk">Результат</span><span lang="en">Outcome</span></h4>
-                <p lang="uk">Тренувальні діалоги отримували структурований розбір за єдиними критеріями. Це скоротило обсяг ручної перевірки.</p>
-                <p lang="en">Practice conversations received structured feedback against the same criteria, reducing manual review.</p></div>
-            </div>
-            <div class="tags"><span class="tag">Assessment design</span><span class="tag">Prompt engineering</span><span class="tag">Claude</span><span class="tag">Chat simulations</span></div>
-          </div>
-        </article>
-
-        <!-- 02 -->
-        <article class="case" style="--r:.25deg">
-          <div class="card taped r sheet">
-            <div class="case-top"><span class="case-no">02</span><span class="case-area"><span lang="uk">Онбординг</span><span lang="en">Onboarding</span></span></div>
-            <h3><span lang="uk">Онбординг, побудований навколо реальної роботи</span><span lang="en">Onboarding built around the real job</span></h3>
-            <div class="cols">
-              <div class="col"><h4><span lang="uk">Задача</span><span lang="en">Challenge</span></h4>
-                <p lang="uk">Нові спеціалісти мали за короткий час засвоїти складні правила й навички спілкування, а потім одразу застосувати їх у живих розмовах.</p>
-                <p lang="en">New specialists had to learn complex rules and communication skills in a short time, then apply them straight away in live conversations.</p></div>
-              <div class="col"><h4><span lang="uk">Що я зробила</span><span lang="en">What I did</span></h4>
-                <ul lang="uk"><li>Створила навчальні матеріали для програм онбордингу різної тривалості</li><li>Будувала логіку модулів, практичні вправи, сценарії та перевірки розуміння</li><li>Спиралася на власний досвід у тій самій ролі</li></ul>
-                <ul lang="en"><li>Created learning materials for onboarding programmes of different lengths</li><li>Built module logic, practice exercises, scenarios and knowledge checks</li><li>Drew on my own experience in the same role</li></ul></div>
-              <div class="col res"><h4><span lang="uk">Результат</span><span lang="en">Outcome</span></h4>
-                <p lang="uk">У програмах новачки могли відпрацювати типові ситуації до того, як мали застосовувати ці навички в розмовах із клієнтами.</p>
-                <p lang="en">The programmes gave new hires a chance to practise typical situations before using those skills in customer conversations.</p></div>
-            </div>
-            <div class="tags"><span class="tag">Training Needs Analysis</span><span class="tag">Learning journeys</span><span class="tag">LMS</span><span class="tag">Knowledge checks</span></div>
-          </div>
-        </article>
-
-        <!-- 03 -->
-        <article class="case" style="--r:-.2deg">
-          <div class="card taped sheet">
-            <div class="case-top"><span class="case-no">03</span><span class="case-area">E-learning · HTML5</span></div>
-            <h3><span lang="uk">Інтерактивні HTML5-курси, що стали стандартом команди</span><span lang="en">Interactive HTML5 courses that became the team standard</span></h3>
-            <div class="cols">
-              <div class="col"><h4><span lang="uk">Задача</span><span lang="en">Challenge</span></h4>
-                <p lang="uk">Статичні матеріали погано підходили для практичних прикладів і взаємодій, а оновлювати їх було довго.</p>
-                <p lang="en">Static materials didn’t suit practical examples and interactions, and they were slow to update.</p></div>
-              <div class="col"><h4><span lang="uk">Що я зробила</span><span lang="en">What I did</span></h4>
-                <ul lang="uk"><li>Запропонувала формат інтерактивних HTML5-курсів, які створюються з допомогою AI</li><li>Навчила колег робити курси в цьому форматі</li><li>Створила курси й гайди про безпеку, етику, продуктивність та операційні метрики</li></ul>
-                <ul lang="en"><li>Proposed an interactive HTML5 course format built with AI assistance</li><li>Trained colleagues to create courses in this format</li><li>Created courses and guides on safety, ethics, performance and operational metrics</li></ul></div>
-              <div class="col res"><h4><span lang="uk">Результат</span><span lang="en">Outcome</span></h4>
-                <p lang="uk">Колеги освоїли формат і почали використовувати його для наступних курсів.</p>
-                <p lang="en">Colleagues adopted the format and used it for subsequent courses.</p></div>
-            </div>
-            <div class="tags"><span class="tag">AI-assisted HTML5</span><span class="tag">HTML/CSS</span><span class="tag">Descript</span><span class="tag">ElevenLabs</span></div>
-          </div>
-        </article>
-
-        <!-- 04 -->
-        <article class="case" style="--r:.3deg">
-          <div class="card taped r sheet">
-            <div class="case-top"><span class="case-no">04</span><span class="case-area"><span lang="uk">Сценарне навчання · Trust &amp; Safety</span><span lang="en">Scenario-based learning · Trust &amp; Safety</span></span></div>
-            <h3><span lang="uk">Складні розмови: сценарії та обов’язкове навчання</span><span lang="en">Difficult conversations: scenarios and mandatory training</span></h3>
-            <div class="cols">
-              <div class="col"><h4><span lang="uk">Задача</span><span lang="en">Challenge</span></h4>
-                <p lang="uk">Чутливі теми в розмовах із клієнтами потребують точних формулювань і практики без ризику для реальних людей.</p>
-                <p lang="en">Sensitive topics in customer conversations need precise wording and practice without risk to real people.</p></div>
-              <div class="col"><h4><span lang="uk">Що я зробила</span><span lang="en">What I did</span></h4>
-                <ul lang="uk"><li>Спроєктувала сценарне навчання для складних розмов, зокрема інтерактивні чат-симуляції</li><li>Допомогла запустити обов’язкове навчання разом із профільною командою</li><li>Написала сценарій подкасту, підготувала комунікації двома мовами й відстежувала проходження</li></ul>
-                <ul lang="en"><li>Designed scenario-based training for difficult conversations, including interactive chat simulations</li><li>Helped launch mandatory training with a specialist team</li><li>Wrote a podcast script, prepared bilingual communications and tracked completion</li></ul></div>
-              <div class="col res"><h4><span lang="uk">Результат</span><span lang="en">Outcome</span></h4>
-                <p lang="uk">Спеціалісти відпрацьовують складні відповіді в безпечному середовищі, перш ніж зустрінуть такі ситуації в роботі.</p>
-                <p lang="en">Specialists practise difficult responses in a safe environment before they meet these situations at work.</p></div>
-            </div>
-            <div class="tags"><span class="tag">Scenario-based learning</span><span class="tag">Compliance training</span><span class="tag">SME collaboration</span><span class="tag">Podcast</span></div>
-          </div>
-        </article>
-
-        <!-- 05 -->
-        <article class="case" style="--r:-.25deg">
-          <div class="card taped sheet">
-            <div class="case-top"><span class="case-no">05</span><span class="case-area"><span lang="uk">Якість контенту</span><span lang="en">Content quality</span></span></div>
-            <h3><span lang="uk">Аудит навчального контенту</span><span lang="en">Learning content audit</span></h3>
-            <div class="cols">
-              <div class="col"><h4><span lang="uk">Задача</span><span lang="en">Challenge</span></h4>
-                <p lang="uk">У великому каталозі курсів з часом з’являються розбіжності: одна й та сама ситуація може мати різні поради в різних модулях.</p>
-                <p lang="en">A large course catalogue drifts over time: the same situation can get different guidance in different modules.</p></div>
-              <div class="col"><h4><span lang="uk">Що я зробила</span><span lang="en">What I did</span></h4>
-                <ul lang="uk"><li>Переглянула фрагменти навчальних матеріалів у кількох курсах</li><li>Позначила суперечливі інструкції</li><li>Запропонувала звіряти рекомендації з типовими робочими ситуаціями</li></ul>
-                <ul lang="en"><li>Reviewed training content across several courses</li><li>Flagged inconsistent guidance</li><li>Proposed checking recommendations against typical work situations</li></ul></div>
-              <div class="col res"><h4><span lang="uk">Результат</span><span lang="en">Outcome</span></h4>
-                <p lang="uk">Команда отримала конкретні приклади, за якими можна було узгодити рекомендації між курсами.</p>
-                <p lang="en">The team had concrete examples to use when aligning recommendations across courses.</p></div>
-            </div>
-            <div class="tags"><span class="tag">Content audit</span><span class="tag">Learning analytics</span><span class="tag">Notion</span><span class="tag">Google Workspace</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
+  <!-- SKILLS -->
   <section id="skills">
     <div class="wrap">
       <div class="sec-head">
@@ -717,7 +740,7 @@ footer{padding-block:6px 36px;color:var(--pencil);font-size:13px;display:flex;fl
         </div>
         <div class="card skill s-blue" style="--r:1deg">
           <h3><span lang="uk">Інструменти</span><span lang="en">Tools</span></h3>
-          <div class="tags"><span class="tag">Claude</span><span class="tag">HTML/CSS</span><span class="tag">LMS</span><span class="tag">Notion</span><span class="tag">Google Workspace</span><span class="tag">Zapier</span><span class="tag">Descript</span><span class="tag">ElevenLabs</span></div>
+          <div class="tags"><span class="tag">Claude</span><span class="tag">HTML/CSS</span><span class="tag">LearnUpon</span><span class="tag">Notion</span><span class="tag">Google Workspace</span><span class="tag">Zapier</span><span class="tag">Descript</span><span class="tag">ElevenLabs</span></div>
         </div>
       </div>
     </div>
@@ -790,11 +813,12 @@ footer{padding-block:6px 36px;color:var(--pencil);font-size:13px;display:flex;fl
       <div>
         <div class="hand"><span lang="uk">напиши мені ✎</span><span lang="en">drop me a line ✎</span></div>
         <h2><span lang="uk">Маєш навчальну задачу? Обговорімо.</span><span lang="en">Got a learning challenge? Let’s talk.</span></h2>
-        <p lang="uk">Відкрита до віддалених ролей в Instructional Design, E-learning та Education Operations. Працюю з України.</p>
-        <p lang="en">Open to remote roles in Instructional Design, E-learning and Education Operations. Based in Ukraine.</p>
+        <p lang="uk">Шукаю віддалену роль Instructional Designer або E-learning Specialist: онбординг, сценарне навчання, AI в L&amp;D. Україна, Львівщина.</p>
+        <p lang="en">Looking for a remote Instructional Designer or E-learning Specialist role: onboarding, scenario-based learning, AI in L&amp;D. Based in Lviv region, Ukraine.</p>
       </div>
       <div class="c-list">
         <a class="btn primary" href="https://www.linkedin.com/in/anna-shenishevska-b2b895412/" target="_blank" rel="noopener noreferrer"><span lang="uk">Знайти мене в LinkedIn</span><span lang="en">Find me on LinkedIn</span></a>
+        <span><a class="lnk" href="Anna_Shenishevska_CV_UA.pdf">CV (UA)</a> · <a class="lnk" href="Anna_Shenishevska_CV_EN.pdf">CV (EN)</a></span>
       </div>
     </div>
   </div>
@@ -981,7 +1005,7 @@ footer{padding-block:6px 36px;color:var(--pencil);font-size:13px;display:flex;fl
   }
   document.querySelectorAll('[data-set-lang]').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.setLang)})});
   var savedLang=store('as-lang');
-  if(!savedLang){var nl=(navigator.language||'uk').toLowerCase();savedLang=/^uk/.test(nl)?'uk':'en'}
+  if(!savedLang){var nl=(navigator.language||'uk').toLowerCase();savedLang=/^(uk|ru|be)/.test(nl)?'uk':'en'}
   setLang(savedLang);
 
 
